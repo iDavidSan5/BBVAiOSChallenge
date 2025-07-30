@@ -1,0 +1,41 @@
+{
+  "record": {
+    "balance": 5580.5,
+    "transactions": [
+      {
+        "id": 1,
+        "name": "Salario Mensual",
+        "amount": 3000,
+        "date": "2024-07-15",
+        "type": "ingreso"
+      },
+      {
+        "id": 2,
+        "name": "Compra en Supermercado",
+        "amount": -120.75,
+        "date": "2024-07-16",
+        "type": "egreso"
+      },
+      {
+        "id": 3,
+        "name": "Pago de Alquiler",
+        "amount": -850,
+        "date": "2024-07-17",
+        "type": "egreso"
+      },
+      {
+        "id": 4,
+        "name": "Devolución de Impuestos",
+        "amount": 450.25,
+        "date": "2024-07-18",
+        "type": "ingreso"
+      }
+    ]
+  },
+  "metadata": {
+    "id": "687e9f36f7e7a370d1eb9ee0",
+    "private": false,
+    "createdAt": "2025-07-21T20:12:38.989Z",
+    "name": "transaction-info"
+  }
+}

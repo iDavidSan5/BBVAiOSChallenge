@@ -1,0 +1,99 @@
+warning_threshold: 18
+
+nesting:
+  type_level:
+    warning: 2
+    error: 3
+
+force_cast:
+  severity: error
+
+force_try:
+  severity: error
+
+empty_count:
+  severity: warning
+
+cyclomatic_complexity:
+  warning: 100
+  error: 90
+
+function_parameter_count:
+  warning: 10
+  error: 15
+
+file_length:
+  warning: 400
+  error: 1000
+
+type_body_length:
+  warning: 200
+  error: 500
+
+function_body_length:
+  warning: 40
+  error: 100
+
+line_length:
+  warning: 200
+  ignores_comments: true
+  ignores_function_declarations: true
+
+type_name:
+  validates_start_with_lowercase: warning
+  max_length:
+    warning: 50
+  allowed_symbols:
+    - _
+
+identifier_name:
+  allowed_symbols:
+    - _
+  min_length:
+    error: 0
+    warning: 2
+  max_length:
+    warning: 50
+  validates_start_with_lowercase: warning
+  excluded:
+    - x
+    - y
+    - i
+
+# custom_rules:
+
+disabled_rules:
+  - trailing_whitespace
+  - sorted_imports
+  - large_tuple
+  - inclusive_language
+
+opt_in_rules:
+  - empty_count
+  - array_init
+  - closure_end_indentation
+  - contains_over_first_not_nil
+  - explicit_init
+  - multiline_parameters
+  - object_literal
+  - overridden_super_call
+  - switch_case_on_newline
+  - unneeded_parentheses_in_closure_argument
+  - vertical_parameter_alignment_on_call
+  - explicit_type_interface
+  - force_unwrapping
+
+included:
+  - ditu
+  - HLSPlayer/Sources
+  - ServiceModule/Sources
+  - Utils/Sources
+  - UIModule/Sources
+  - Feature/Sources
+  - Feature/Sources
+  - PlayerModule/Sources
+
+excluded:
+  - UIModule/Sources/UIModule/Resources/Assets
+  - UIModule/Sources/UIModule/Resources/Fonts
+  - UIModule/Sources/UIModule/Resources/Strings
